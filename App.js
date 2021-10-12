@@ -1,12 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StatusBar, StyleSheet, View} from 'react-native';
 import OnBoarding from './src/view/OnBoarding';
 
 const App = () => {
   return (
-    <View>
-      <OnBoarding />
-    </View>
+    <>
+      <StatusBar translucent={true} backgroundColor="transparent" />
+      <View style={{flex: 1}}>
+        <OnBoarding />
+      </View>
+    </>
   );
 };
 
