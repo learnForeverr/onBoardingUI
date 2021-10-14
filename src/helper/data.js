@@ -1,3 +1,4 @@
+import {Dimensions} from 'react-native';
 import FirstSlide from '../svgIcons/FirstSlide';
 import SecondSlide from '../svgIcons/SecondSlide';
 import ThirdSlide from '../svgIcons/ThirdSlide';
@@ -25,3 +26,8 @@ export const data = [
     description: 'The more you analyse, the more you learn',
   },
 ];
+
+export const _WIDTH = Dimensions.get('window').width;
+export const _HEIGHT = Dimensions.get('window').height;
+
+export const interpolation = data.map((_, i) => i * _WIDTH);
